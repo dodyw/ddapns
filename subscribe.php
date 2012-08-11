@@ -1,8 +1,7 @@
 <?php  
+include "config.php";
 
-$apns_key = '123456';
-
-if ($_GET['key']!=$apns_key) {
+if ($_GET['key']!=$config['apns_key']) {
   exit;
 }
 
