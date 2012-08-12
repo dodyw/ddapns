@@ -15,9 +15,10 @@ REQUIREMENT
 INSTALLATION
 ============
 
-Edit config.php. If necessary provide both PRODUCTION and DEVELOPMENT .pem file.
-Set sandbox_mode = true for DEVELOPMENT and set false for PRODUCTION.
-Set apns_access_key to any string so only you able to use this script.
+1. Edit config.php. 
+2. If necessary provide both PRODUCTION and DEVELOPMENT .pem file.
+3. Set sandbox_mode = true for DEVELOPMENT and set false for PRODUCTION.
+4. Set apns_access_key to any string so only you able to use this script.
 
 <?php  
   $config['sandbox_mode'] = true;
@@ -67,3 +68,8 @@ http://192.168.1.144/ddapns/push.php?key=123456&msg=this%20is%20test
 Parameters:
 - key is apns_access_key
 - msg is the message
+
+
+5) Checking port 2195 is open
+
+http://192.168.1.144/ddapns/checkport.php
